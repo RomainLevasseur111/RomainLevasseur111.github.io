@@ -1,0 +1,29 @@
+nav {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 25px;
+    z-index: 1;
+}
+
+.navbar {
+    padding: 10px; /* Padding around the nav bar */
+}
+
+.navbar ol {
+    display: flex; /* Flexbox to align items in a row */
+    justify-content: space-around; /* Space evenly around items */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.navbar li {
+    color: rgb(165, 36, 36); /* White text color */
+    padding: 0px 20px; /* Spacing around each nav item */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar li:hover {
+    color: #61dafb; /* Highlight color on hover */
+}

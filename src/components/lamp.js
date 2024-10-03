@@ -1,0 +1,43 @@
+import "./lamp.scss";
+
+const Lamp = () => {
+    return (
+        <div class="scene">
+            <div class="layer layer-1">
+                <div class="desk"></div>
+                <div class="plant">
+                    <div class="plant-stalk"></div>
+                    <div class="plant-leaf"></div>
+                    <div class="plant-leaf"></div>
+                </div>
+                <div class="lamp">
+                    <div class="lamp-base"></div>
+                    <div class="lamp-mid">
+                        <div class="lamp-mid-knob"></div>
+                    </div>
+                    <div class="lamp-top"></div>
+                </div>
+                <div class="lamp-light"></div>
+                <div class="laptop"></div>
+                <div class="book"></div>
+                <div class="book-1"></div>
+                <div class="book-2"></div>
+                <div class="coffee">
+                    <div class="coffee-handle"></div>
+                    <div class="coffee-brew"></div>
+                </div>
+                <div class="glass"></div>
+            </div>
+            <div class="layer layer-2">
+
+            </div>
+            <div class="layer layer-3">
+                <div class="painting">
+                    <div class="painting-inner"></div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Lamp;

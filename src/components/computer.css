@@ -1,0 +1,9 @@
+.computer-svg {
+    margin-left: 7%;
+    margin-top: 9%;
+    position: absolute;
+    max-width: 100%; /* Make sure the SVG is responsive */
+    max-height: 100%;
+    height: auto; /* Keep the aspect ratio */
+    width: auto;
+}
