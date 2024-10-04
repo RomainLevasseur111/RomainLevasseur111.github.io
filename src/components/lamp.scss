@@ -1,7 +1,7 @@
 $brown-light: #957c43;
 $green-light: #21bf21;
 $blue-light: #7fcbdd;
-$blue-med: #00a3f6;
+$metal-grey: #414d53;
 $yellow-light: #f8f8a9;
 
 $z-top: 10;
@@ -21,10 +21,10 @@ html {
     position: absolute;
     width: 640px;
     height: 360px;
-    top: 0;
+    top: 33%;
     bottom: 0;
     right: 0;
-    left: 0;
+    left: 4%;
     overflow: hidden;
     //max-width: 320px;
     //max-height: 180px
@@ -52,10 +52,6 @@ html {
     }
 }
 
-/*
-*   .layer-1 styles START
-*/
-
 .desk {
     width: 100%;
     height: 2%;
@@ -79,12 +75,10 @@ html {
         position: absolute;
         bottom: 0;
         z-index: $z-mid;
-        background: #fff;
+        background: #fff3af;
         border-bottom-right-radius: 40px;
         border-bottom-left-radius: 40px;
-        box-shadow: inset 5px 0px 0px #fff;
-        animation: flicker-on-shadow 1s forwards;
-        animation-delay: 1s;
+        box-shadow: inset 5px 0px 0px #fff3af;
     }
 
     &-stalk {
@@ -137,7 +131,10 @@ html {
         }
     }
 }
-
+body.dark .plant::before {
+    animation: flicker-on-shadow 1s forwards;
+    animation-delay: 1s;
+}
 .lamp {
     width: 30%;
     height: 80%;
@@ -150,7 +147,7 @@ html {
         height: 4%;
         bottom: 0;
         right: 0;
-        background-color: $blue-med;
+        background-color: $metal-grey;
         border-radius: 3px;
         z-index: $z-top;
 
@@ -226,7 +223,7 @@ html {
         height: 10%;
         top: 16%;
         right: 44%;
-        background-color: $blue-med;
+        background-color: $metal-grey;
         border-top-left-radius: 100%;
         border-top-right-radius: 100%;
         transform-origin: 50% 0;
@@ -247,7 +244,7 @@ html {
         &:before {
             width: 300%;
             height: 150%;
-            background-color: $blue-med;
+            background-color: $metal-grey;
             border-top-left-radius: 50px;
             border-top-right-radius: 50px;
             top: 50%;
@@ -279,9 +276,11 @@ html {
         right: 20%;
         top: 33%;
         z-index: $z-bot;
-        animation: flicker-on 1s forwards;
-        animation-delay: 1s;
     }
+}
+body.dark .lamp-light {
+    animation: flicker-on 1s forwards;
+    animation-delay: 1s;
 }
 
 .laptop {
@@ -338,7 +337,7 @@ html {
         width: 15%;
         bottom: 6%;
         left: 65%;
-        background-color: $blue-med;
+        background-color: $metal-grey;
         border-top-right-radius: 2px;
         border-bottom-right-radius: 2px;
         z-index: $z-mid;
@@ -362,13 +361,12 @@ html {
     width: 7%;
     height: 15%;
     bottom: 11%;
+
     left: 67%;
-    background-color: #fff;
+    background-color: #b91a1a;
     border-radius: 8px;
-    box-shadow: inset 5px 0px 0px #fff;
+    box-shadow: inset 5px 0px 0px #b91a1a;
     z-index: $z-top;
-    animation: flicker-on-shadow 1s forwards;
-    animation-delay: 1s;
 
     &:before,
     &:after {
@@ -399,7 +397,7 @@ html {
         height: 50%;
         left: 85%;
         top: 25%;
-        border: 3px solid #fff;
+        border: 3px solid #b91a1a;
         border-radius: 15%;
         z-index: $z-bot;
     }
@@ -415,18 +413,19 @@ html {
         right: 0;
     }
 }
+body.dark .coffee {
+    animation: flicker-on-shadow-coffee 1s forwards;
+    animation-delay: 1s;
+}
 
 .glass {
     width: 8%;
     height: 20%;
     bottom: 2%;
     left: 15%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(234, 238, 242, 0.7);
     border-radius: 3px 3px 40% 40%;
     z-index: $z-top;
-    // box-shadow: inset 5px 0px 0px #fff;
-    // animation: flicker-on-shadow 1s forwards;
-    // animation-delay: 1s;
 
     &:before {
         content: "";
@@ -438,78 +437,16 @@ html {
         left: 0;
         right: 0;
         bottom: 6%;
-        background-color: $blue-light;
+        background: rgb(0, 0, 0);
+        background: radial-gradient(
+            circle,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(127, 203, 221, 1) 0%,
+            rgba(210, 220, 222, 1) 100%
+        );
         border-radius: 0 0 60% 60%;
     }
 }
-
-/*
-*   .layer-1 styles END
-*/
-
-/*
-*   .layer-2 styles START
-*/
-
-.self {
-    width: 25%;
-    height: 40%;
-    left: 30%;
-    bottom: 47%;
-    background-color: #fff;
-
-    &:after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 30%;
-        background-color: #f00;
-        position: absolute;
-        bottom: -15%;
-        border-top-left-radius: 100%;
-        border-top-right-radius: 100%;
-    }
-
-    &-head {
-        width: 50%;
-        height: 70%;
-        margin: auto;
-        bottom: 13%;
-        left: 0;
-        right: 0;
-        border-top-left-radius: 25%;
-        border-top-right-radius: 25%;
-        border-bottom-right-radius: 40% 60%;
-        border-bottom-left-radius: 40% 60%;
-        background-color: $brown-light;
-        z-index: $z-top;
-
-        &:after {
-            content: "";
-            display: block;
-            width: 110%;
-            height: 70%;
-            margin: auto;
-            position: absolute;
-            left: -100%;
-            right: -100%;
-            background-color: darken($brown-light, 20%);
-            border-top-left-radius: 35%;
-            border-top-right-radius: 35%;
-            border-bottom-right-radius: 40% 60%;
-            border-bottom-left-radius: 40% 60%;
-            z-index: $z-bot;
-        }
-    }
-}
-
-/*
-*   .layer-2 styles END
-*/
-
-/*
-*   .layer-3 styles START
-*/
 
 .painting {
     width: 13%;
@@ -517,14 +454,14 @@ html {
     left: 10%;
     top: 5%;
     border: 6px solid #000;
-    background-color: #eee;
+    background: #eee;
     border-radius: 10px 0 10px 0;
 
     &-inner {
         width: 50%;
         height: 40%;
         border-radius: 50%;
-        background-color: $blue-med;
+        background-color: $metal-grey;
         top: 10%;
         left: 10%;
         z-index: $z-top;
@@ -559,77 +496,125 @@ html {
     }
 }
 
-/*
-*   .layer-3 styles END
-*/
+body.dark .painting {
+    width: 13%;
+    height: 24%;
+    left: 10%;
+    top: 5%;
+    border: 6px solid #000;
+    background-image: url("../assets/ouss.png");
+    border-radius: 10px 0 10px 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s;
+        &-inner {
+        width: 50%;
+        height: 40%;
+        border-radius: 50%;
+        background-color: $metal-grey;
+        top: 10%;
+        left: 10%;
+        z-index: $z-top;
+        opacity: 0;
 
-/*
-*  animations
-*/
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
 
-@keyframes flicker-on {
-    0% {
-        opacity: 0;
-    }
-    49% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.8;
-    }
-    51% {
-        opacity: 0;
-    }
-    75% {
-        opacity: 0.7;
-    }
-    77% {
-        opacity: 0;
-    }
-    78% {
-        opacity: 0.8;
-    }
-    79% {
-        opacity: 0;
-    }
-    80% {
-        opacity: 0.7;
-    }
-    100% {
-        opacity: 0.7;
+        &:before {
+            height: 0;
+            width: 0;
+            border-bottom: 32px solid yellow;
+            border-left: 18px solid transparent;
+            border-right: 18px solid transparent;
+            top: 120%;
+            left: 0%;
+            z-index: $z-bot;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+            opacity: 0;
+        }
+
+        &:after {
+            height: 160%;
+            width: 80%;
+            background-color: #f00;
+            left: 80%;
+            z-index: $z-mid;
+            opacity: 0;
+        }
     }
 }
 
 @keyframes flicker-on-shadow {
-    0% {
-        box-shadow: inset 5px 0px 0px #fff;
-    }
+    0%,
     49% {
-        box-shadow: inset 5px 0px 0px #fff;
+        box-shadow: inset 5px 0px 0px #fff3af;
     }
-    50% {
-        box-shadow: inset 5px 0px 0px #545454;
-    }
+    50%,
     51% {
-        box-shadow: inset 5px 0px 0px #fff;
-    }
-    75% {
         box-shadow: inset 5px 0px 0px #545454;
     }
+    75%,
     77% {
-        box-shadow: inset 5px 0px 0px #fff;
-    }
-    78% {
         box-shadow: inset 5px 0px 0px #545454;
     }
+    78%,
     79% {
-        box-shadow: inset 5px 0px 0px #fff;
+        box-shadow: inset 5px 0px 0px #fff3af;
     }
-    80% {
-        box-shadow: inset 5px 0px 0px #545454;
-    }
+    80%,
     100% {
         box-shadow: inset 5px 0px 0px #545454;
+    }
+}
+@keyframes flicker-on-shadow-coffee {
+    0%,
+    49% {
+        box-shadow: inset 5px 0px 0px #b91a1a;
+    }
+    50%,
+    51% {
+        box-shadow: inset 5px 0px 0px #500c0c;
+    }
+    75%,
+    77% {
+        box-shadow: inset 5px 0px 0px #500c0c;
+    }
+    78%,
+    79% {
+        box-shadow: inset 5px 0px 0px #b91a1a;
+    }
+    80%,
+    100% {
+        box-shadow: inset 5px 0px 0px #500c0c;
+    }
+}
+
+@keyframes flicker-on {
+    0%,
+    49% {
+        opacity: 0;
+    }
+    50%,
+    51% {
+        opacity: 0.8;
+    }
+    75%,
+    77% {
+        opacity: 0.7;
+    }
+    78%,
+    79% {
+        opacity: 0;
+    }
+    80%,
+    100% {
+        opacity: 0.7;
     }
 }
 

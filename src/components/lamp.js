@@ -2,38 +2,36 @@ import "./lamp.scss";
 
 const Lamp = () => {
     return (
-        <div class="scene">
-            <div class="layer layer-1">
-                <div class="desk"></div>
-                <div class="plant">
-                    <div class="plant-stalk"></div>
-                    <div class="plant-leaf"></div>
-                    <div class="plant-leaf"></div>
+        <div className="scene">
+            <div className="layer layer-1">
+                <div className="desk"></div>
+                <div className="plant">
+                    <div className="plant-stalk"></div>
+                    <div className="plant-leaf"></div>
+                    <div className="plant-leaf"></div>
                 </div>
-                <div class="lamp">
-                    <div class="lamp-base"></div>
-                    <div class="lamp-mid">
-                        <div class="lamp-mid-knob"></div>
+                <div className="lamp">
+                    <div className="lamp-base"></div>
+                    <div className="lamp-mid">
+                        <div className="lamp-mid-knob"></div>
                     </div>
-                    <div class="lamp-top"></div>
+                    <div className="lamp-top"></div>
                 </div>
-                <div class="lamp-light"></div>
-                <div class="laptop"></div>
-                <div class="book"></div>
-                <div class="book-1"></div>
-                <div class="book-2"></div>
-                <div class="coffee">
-                    <div class="coffee-handle"></div>
-                    <div class="coffee-brew"></div>
+                <div className="lamp-light"></div>
+                <div className="laptop"></div>
+                <div className="book"></div>
+                <div className="book-1"></div>
+                <div className="book-2"></div>
+                <div className="coffee">
+                    <div className="coffee-handle"></div>
+                    <div className="coffee-brew"></div>
                 </div>
-                <div class="glass"></div>
+                <div className="glass"></div>
             </div>
-            <div class="layer layer-2">
-
-            </div>
-            <div class="layer layer-3">
-                <div class="painting">
-                    <div class="painting-inner"></div>
+            <div className="layer layer-2"></div>
+            <div className="layer layer-3">
+                <div className="painting">
+                    <div className="painting-inner"></div>
                 </div>
             </div>
         </div>

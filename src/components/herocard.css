@@ -1,11 +1,11 @@
 .hero-card-wrapper {
-    background-color: #ffffff; /* Dark background for the code block */
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    font-family: "Courier New", Courier, monospace; /* Monospaced font for code */
-    color: #000000; /* White text color */
-    width: 600px; /* Optional max-width for the block */
-    margin: 20px auto; /* Center the code block */
+    font-family: "Courier New", Courier, monospace;
+    color: #000000;
+    width: 600px;
+    margin: 20px ;
     text-align: left;
     transition: background-color 0.3s;
 }
@@ -13,13 +13,13 @@
 .hero-card-wrapper pre {
     margin: 0;
     padding: 0;
-    font-size: 1.1rem; /* Adjust font size */
-    color: #000000; /* Code text color */
+    font-size: 1.1rem; 
+    color: #000000; 
     transition: color 0.3s;
 }
 
 .hero-card-wrapper b {
-    color: #3d7483; /* Highlighted text (e.g., class name, strings) */
+    color: #3d7483; 
     transition: color 0.3s;
 }
 

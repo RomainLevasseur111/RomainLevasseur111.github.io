@@ -33,7 +33,7 @@
 }
 
 .light .right-panel {
-    background-color: lightsteelblue; /* Blue */
+    background-color: #b0c4de; /* Blue */
 }
 
 /* Dark Theme */
@@ -49,9 +49,10 @@
 
 .name {
     position: absolute;
-    top: 10px; /* Adjust as needed */
-    width: 100%; /* Make sure the element spans the full width of the left panel */
-    text-align: center; /* Center the text */
-    font-size: 24px; /* Adjust font size as necessary */
-    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    font-size: 75px;
+    top: 15%;
+
+    color: #fff;
 }

@@ -7,15 +7,15 @@ const Page1 = () => {
     return (
         <div
             className={`container ${isDarkMode ? "dark" : "light"}`}
-            id="#Intro"
+            id="Intro"
         >
+            <h2 className="name">Romain Levasseur</h2>
+
             <span className="computer-svg">
                 <Lamp />
             </span>
 
-            <div className="left-panel">
-                <h2 className="name">Romain Levasseur</h2>
-            </div>
+            <div className="left-panel"></div>
             <div className="right-panel">
                 <div className="description">
                     {" "}

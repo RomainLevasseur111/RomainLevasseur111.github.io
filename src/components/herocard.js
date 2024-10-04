@@ -20,8 +20,11 @@ const HeroCard = () => {
                 5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.age = new
                 Date().getFullYear() - 1993;
             </pre>
-            <pre>6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#125;</pre>
-            <pre>7&nbsp;&nbsp;&#125;</pre>
+            <pre>
+                6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.country = "<b>France</b>";
+            </pre>
+            <pre>7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#125;</pre>
+            <pre>8&nbsp;&nbsp;&#125;</pre>
         </div>
     );
 };
