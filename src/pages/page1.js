@@ -9,7 +9,12 @@ const Page1 = () => {
             className={`container ${isDarkMode ? "dark" : "light"}`}
             id="Intro"
         >
-            <h2 className="name">Romain Levasseur</h2>
+            <div className="whoami">
+                {" "}
+                <h3 className="iam">I'm</h3>
+                <h2 className="name">Romain Levasseur</h2>
+                <h3 className="fullstack">Fullstack Developer</h3>
+            </div>
 
             <span className="computer-svg">
                 <Lamp />
