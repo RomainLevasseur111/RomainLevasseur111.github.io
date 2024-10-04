@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/RomainLevasseur111.github.io/static/css/main.08fe3f31.css",
+    "main.js": "/RomainLevasseur111.github.io/static/js/main.e5e9073f.js",
+    "static/js/453.acca0757.chunk.js": "/RomainLevasseur111.github.io/static/js/453.acca0757.chunk.js",
+    "static/media/ouss.png": "/RomainLevasseur111.github.io/static/media/ouss.df6410ea4d5e6876eeb7.png",
+    "static/media/sun.svg": "/RomainLevasseur111.github.io/static/media/sun.c023ed9b0da33ea71ea6.svg",
+    "static/media/moon.svg": "/RomainLevasseur111.github.io/static/media/moon.8b8d1f3ca7be4f73e277.svg",
+    "index.html": "/RomainLevasseur111.github.io/index.html",
+    "main.08fe3f31.css.map": "/RomainLevasseur111.github.io/static/css/main.08fe3f31.css.map",
+    "main.e5e9073f.js.map": "/RomainLevasseur111.github.io/static/js/main.e5e9073f.js.map",
+    "453.acca0757.chunk.js.map": "/RomainLevasseur111.github.io/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08fe3f31.css",
+    "static/js/main.e5e9073f.js"
+  ]
+}
